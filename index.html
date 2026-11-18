@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>Tic Tac Arena</title><link rel="stylesheet" href="style.css"/></head>
+<body><main class="app"><header class="topbar"><div><p class="kicker">TIC TAC ARENA</p><h1>Крестики <span>vs</span> нолики</h1></div><div class="wallet"><b>🪙 <span id="coins">0</span></b><small>монет</small></div></header>
+<section class="arena"><aside class="player-card x-card"><span class="player-label">ИГРОК 1</span><strong id="xPreview" class="mark-preview">✕</strong><span>КРЕСТИКИ</span><small>Побед: <b id="xWins">0</b></small></aside><div class="game-zone"><p id="status" class="status" aria-live="polite">Ход крестиков</p><div id="board" class="board" role="grid" aria-label="Игровое поле"></div><button id="restart" class="restart" type="button">↻ Новая игра</button></div><aside class="player-card o-card"><span class="player-label">ИГРОК 2</span><strong id="oPreview" class="mark-preview">◯</strong><span>НОЛИКИ</span><small>Побед: <b id="oWins">0</b></small></aside></section>
+<section class="shop" aria-labelledby="shop-title"><div class="shop-heading"><div><p class="kicker">МАГАЗИН АРЕНЫ</p><h2 id="shop-title">Скины игроков</h2></div><p>Победа приносит <b>+15 🪙</b></p></div><div id="skinShop" class="skin-shop"></div></section></main>
+<template id="skinTemplate"><article class="skin-card"><div class="skin-art"></div><div><h3></h3><p></p><button type="button"></button></div></article></template><script src="script.js"></script></body></html>
+
